@@ -1,5 +1,5 @@
 {
-  "Sector56": {"AQI": 75, "LED": "ON"},
-  "Sector57": {"AQI": 90, "LED": "OFF"},
-  "Sector58": {"AQI": 60, "LED": "ON"}
+  "Sector56": {"AQI": 135, "LED": "OFF"},
+  "Sector57": {"AQI": 180, "LED": "ON"},
+  "Sector58": {"AQI": 146, "LED": "OFF"}
 }
