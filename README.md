@@ -45,6 +45,11 @@ The air quality sensor abd LED circuit is simulated in TinkerCAD using a potenti
 Simulation link: https://www.tinkercad.com/things/iN54VpWd2ns-iot-project?sharecode=3YNupEM8_71GfxhgEo6RgHxCmteemcQMbyrF67H0xng
 
 <img width="1132" height="600" alt="image" src="https://github.com/user-attachments/assets/4cffb763-cf73-4803-88dc-bac9d6a57d6b" />
+ARDUINO CODE: <img width="1063" height="692" alt="image" src="https://github.com/user-attachments/assets/cda5b5b4-0b78-429b-9808-82e6e20fcca1" />
+<img width="1677" height="616" alt="image" src="https://github.com/user-attachments/assets/eddeee55-a5cf-4a77-964c-a99bdd7e5eed" />
+
+
+
 
 
 - made by vihaan dayal for IoT course
