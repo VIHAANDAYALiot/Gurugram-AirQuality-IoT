@@ -1,0 +1,5 @@
+{
+  "Sector56": {"AQI": 75, "LED": "ON"},
+  "Sector57": {"AQI": 90, "LED": "OFF"},
+  "Sector58": {"AQI": 60, "LED": "ON"}
+}
