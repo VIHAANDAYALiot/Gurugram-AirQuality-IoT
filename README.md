@@ -36,4 +36,15 @@ it also controls LED that turns ON when air quality is poor.
 - i will Display real-time AQI values on a map of Gurugram.
 - and it will Collect data from multiple microcontrollers in different city areas.
 
+- ## Circuit + Code
+
+The air quality sensor abd LED circuit is simulated in TinkerCAD using a potentiometer as a replacement for MQ135.  
+- LED turns ON when air quality value goes into a harmful range.  
+- Serial Monitor shows `Air Quality: XXX` values.
+
+Simulation link: https://www.tinkercad.com/things/iN54VpWd2ns-iot-project?sharecode=3YNupEM8_71GfxhgEo6RgHxCmteemcQMbyrF67H0xng
+
+<img width="1132" height="600" alt="image" src="https://github.com/user-attachments/assets/4cffb763-cf73-4803-88dc-bac9d6a57d6b" />
+
+
 - made by vihaan dayal for IoT course
