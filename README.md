@@ -24,9 +24,9 @@ it also controls LED that turns ON when air quality is poor.
 
  Setup Instructions
 1. Upload `arduino-code/mq135_led.ino` to your Arduino.  
-2. Connect the circuit as shown in the README diagram (coming soon).  
+2. Connect the circuit as shown in the README diagram (not made yet)  
 3. Open Serial Monitor to test readings.  
-4. Set up the RobotNinja API to view your data online.
+4. Set up the RoboNinja API to view your data online.
 
  Dashboard Links
 - App: Ill make it soon
