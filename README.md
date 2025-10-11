@@ -48,8 +48,14 @@ Simulation link: https://www.tinkercad.com/things/iN54VpWd2ns-iot-project?sharec
 ARDUINO CODE: <img width="1063" height="692" alt="image" src="https://github.com/user-attachments/assets/cda5b5b4-0b78-429b-9808-82e6e20fcca1" />
 <img width="1677" height="616" alt="image" src="https://github.com/user-attachments/assets/eddeee55-a5cf-4a77-964c-a99bdd7e5eed" />
 
+: Placeholder API + Web Dashboard
 
-
+- `sensor_data.json` simulates sensor readings from different sectors.
+- `index.html` reads this JSON and displays:
+  - AQI for each sector
+  - LED status based on AQI
+- LED logic: turns ON if AQI > 150, otherwise OFF.
+- Real RoboNinja use will replace this soon
 
 
 - made by vihaan dayal for IoT course
