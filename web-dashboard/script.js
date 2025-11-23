@@ -1,27 +1,40 @@
 async function loadAQIData() {
-    const response = await fetch("sensor_data.json");
-    const data = await response.json();
+    try {
+        const response = await fetch('sensor_data.json?cache=' + Math.random());
+        const data = await response.json();
 
-    const container = document.getElementById("aqi-container");
-    container.innerHTML = "";
+        const container = document.getElementById('aqi-container');
+        container.innerHTML = ""; // Clear old cards
 
-    for (let sector in data) {
-        let aqi = data[sector].aqi;
-        let status = "";
-        
-        if (aqi > 150) status = "poor";
-        else if (aqi > 100) status = "moderate";
-        else status = "good";
+        data.forEach((sector) => {
+            const card = document.createElement('div');
+            card.classList.add('card');
 
-        container.innerHTML += `
-            <div class="card ${status}">
-                <h2>${sector}</h2>
-                <p>AQI: <b>${aqi}</b></p>
-                <p>LED Status: <b>${aqi > 150 ? "ON" : "OFF"}</b></p>
-            </div>
-        `;
+            // Color logic
+            if (sector.aqi <= 100) {
+                card.classList.add('good');
+            } else if (sector.aqi <= 150) {
+                card.classList.add('moderate');
+            } else {
+                card.classList.add('poor');
+            }
+
+            card.innerHTML = `
+                <h2>${sector.name}</h2>
+                <p><strong>AQI:</strong> ${sector.aqi}</p>
+                <p><strong>LED Status:</strong> ${sector.led ? "ON" : "OFF"}</p>
+            `;
+
+            container.appendChild(card);
+        });
+
+    } catch (error) {
+        console.log("Error loading AQI data:", error);
     }
 }
 
+// First load
 loadAQIData();
+
+// Auto-refresh every 5 seconds
 setInterval(loadAQIData, 5000);
