@@ -1,22 +1,27 @@
-async function loadData() {
-  const response = await fetch('sensor_data.json');
-  const data = await response.json();
+async function loadAQIData() {
+    const response = await fetch("sensor_data.json");
+    const data = await response.json();
 
-  const container = document.getElementById('container');
-  container.innerHTML = '';
+    const container = document.getElementById("aqi-container");
+    container.innerHTML = "";
 
-  for (let sector in data) {
-    const aqi = data[sector].aqi;
-    const led = aqi > 150 ? "ON" : "OFF";
+    for (let sector in data) {
+        let aqi = data[sector].aqi;
+        let status = "";
+        
+        if (aqi > 150) status = "poor";
+        else if (aqi > 100) status = "moderate";
+        else status = "good";
 
-    container.innerHTML += `
-      <div style="margin-bottom: 20px; border: 1px solid black; padding: 10px;">
-        <h3>${sector}</h3>
-        <p>AQI: ${aqi}</p>
-        <p>LED Status: <strong>${led}</strong></p>
-      </div>
-    `;
-  }
+        container.innerHTML += `
+            <div class="card ${status}">
+                <h2>${sector}</h2>
+                <p>AQI: <b>${aqi}</b></p>
+                <p>LED Status: <b>${aqi > 150 ? "ON" : "OFF"}</b></p>
+            </div>
+        `;
+    }
 }
 
-loadData();
+loadAQIData();
+setInterval(loadAQIData, 5000);
