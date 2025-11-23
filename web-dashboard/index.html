@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gurugram Pollution Dashboard</title>
-  </head>
-  <body>
-    <h1>Gurugram AQI Dashboard</h1>
-    <div id="container"></div>
+<head>
+    <title>Gurugram Air Quality Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .good { background: #b3ffb3; }
+        .moderate { background: #ffffb3; }
+        .poor { background: #ffb3b3; }
+    </style>
+</head>
+<body>
+    <h1>Gurugram Pollution Dashboard</h1>
+    <div id="aqi-container"></div>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
