@@ -51,7 +51,7 @@ Dashboard Links
 Web Dashboard (screenshot shown below):
 <img width="1522" height="782" alt="image" src="https://github.com/user-attachments/assets/980ea29f-be8d-4be9-9466-4e401c0e29ec" />
 
-Note: A public live dashboard for external users is not available yet.
+Note: A public live dashboard for external users is not available yet, Blynk does not allow public webdashboards currently. 
 
 Future Plans
 
