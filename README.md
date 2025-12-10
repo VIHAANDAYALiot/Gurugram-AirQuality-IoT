@@ -89,6 +89,12 @@ LED turns ON if AQI > 250, otherwise OFF.
 
 In the future, real Blynk data will replace the placeholder API.
 
-Credits
+IMAGES
+SERIAL MONITOR SHOWING OUTPUT
+<img width="1919" height="1130" alt="image" src="https://github.com/user-attachments/assets/dbdc1075-816e-4071-88b9-c233efb8949d" />
+IMAGE OF CIRCUIT
+<img width="882" height="757" alt="image" src="https://github.com/user-attachments/assets/ea42d7c7-ae58-492d-b8cd-c8ae9da71c2d" />
+
+
 
 Made by Vihaan Dayal for the IoT course.
