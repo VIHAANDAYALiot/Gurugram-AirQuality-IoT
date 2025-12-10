@@ -1,6 +1,11 @@
+
 {
   "Sector A": { "aqi": 80 },
   "Sector B": { "aqi": 120 },
   "Sector C": { "aqi": 160 },
   "Sector D": { "aqi": 200 }
 }
+
+
+
+Sample values currently, future will make into a full pollution map
